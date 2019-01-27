@@ -1,0 +1,199 @@
+*{
+  font-family: 'Lato','Roboto','Open Sans', sans-serif;
+}
+.no-pad{
+  padding: 0;
+}
+.no-marg{
+  margin: 0;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.color1{
+	color: #00ADEE;
+}
+.color2{
+	color: #9D9D9D;
+}
+.bg-color1{
+	background-color: #222;
+}
+.full-screen-jumbo{
+	width: 100%;
+	height: 100vh;
+}
+.full-screen-jumbo img{
+	width: 100%;
+	height: 100%;
+}
+.safari-xs-1{
+
+}
+.safari-xs-2{
+
+}
+.safari-xs-3{
+
+}
+.safari-xs-4{
+
+}
+.safari-xs-5{
+
+}
+.safari-xs-6{
+
+}
+.safari-xs-7{
+
+}
+.safari-xs-8{
+
+}
+.safari-xs-9{
+
+}
+.safari-xs-10{
+
+}
+.safari-xs-11{
+
+}
+.safari-xs-12{
+
+}
+.safari-sm-1{
+
+}
+.safari-sm-2{
+
+}
+.safari-sm-3{
+
+}
+.safari-sm-4{
+	width: 33.29% !important;
+}
+.safari-sm-5{
+
+}
+.safari-sm-6{
+
+}
+.safari-sm-7{
+
+}
+.safari-sm-8{
+
+}
+.safari-sm-9{
+
+}
+.safari-sm-10{
+
+}
+.safari-sm-11{
+
+}
+.safari-sm-12{
+
+}
+
+.safari-md-1{
+
+}
+.safari-md-2{
+
+}
+.safari-md-3{
+
+}
+.safari-md-4{
+	width: 33.29% !important;
+}
+.safari-md-5{
+
+}
+.safari-md-6{
+
+}
+.safari-md-7{
+
+}
+.safari-md-8{
+
+}
+.safari-md-9{
+
+}
+.safari-md-10{
+
+}
+.safari-md-11{
+
+}
+.safari-md-12{
+
+}
+
+.safari-lg-1{
+
+}
+.safari-lg-2{
+
+}
+.safari-lg-3{
+
+}
+.safari-lg-4{
+	width: 33.29% !important;
+}
+.safari-lg-5{
+
+}
+.safari-lg-6{
+
+}
+.safari-lg-7{
+
+}
+.safari-lg-8{
+
+}
+.safari-lg-9{
+
+}
+.safari-lg-10{
+
+}
+.safari-lg-11{
+
+}
+.safari-lg-12{
+
+}
+
+@media(max-width: 767px){
+	.col-xs-hidden{
+		display: none;
+	}
+}
+@media(max-width: 991px) and (min-width: 768px){
+	.col-sm-hidden{
+		display: none;
+	}
+}
+@media(max-width: 1199px) and (min-width: 992px){
+	.col-md-hidden{
+		display: none;
+	}
+}
+@media(max-width: 1920px) and (min-width: 1200px){
+	.col-lg-hidden{
+		display: none;
+	}
+}
