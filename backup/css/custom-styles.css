@@ -1,0 +1,101 @@
+*{
+    font-family: 'Lato','Roboto','Open Sans', sans-serif;
+}
+/*Header*/
+.header-container{
+  background-color: #2e2e2e;
+  max-height: 150px;
+}
+.header-container img{
+  max-height: 150px;
+}
+.menu-items-container{
+
+}
+.menu-items{
+  background-color: transparent;
+  padding: 62px 45px;
+  text-align: center;
+  display: inline-block;
+}
+.menu-item1:hover{
+  background-color: #0099ff;
+}
+.menu-item2:hover{
+  background-color: #0099ff;
+}
+.menu-item3:hover{
+  background-color: #0099ff;
+}
+.menu-item4:hover{
+  background-color: #0099ff;
+}
+.menu-item5:hover{
+  background-color: #0099ff;
+}
+.menu-item6:hover{
+  background-color: #0099ff;
+}
+.header-container .menu-items-container span{
+  color: #fff;
+  font-size: 18px;
+}
+/*JumboTron*/
+.jumbotron-container .jumbotron-row div{
+  /*background: url("/images/three-screen-jumbo.jpg")center center no-repeat;*/
+  height: 600px;
+  background-size: cover;
+
+  border: solid 1px #fff;
+
+}
+.jumbotron-container .jumbotron-row .jumbotron-slide1{
+  background-color: blue;
+}
+.jumbotron-container .jumbotron-row .jumbotron-slide1:hover{
+  width: 100%;
+  z-index: 100;
+  transition: ease-in .3s;
+}
+.jumbotron-container .jumbotron-row .jumbotron-slide1:hover ~ .jumbotron-slide2{
+  width: 0%;
+  transition: ease-in .3s;
+  padding: 0px;
+  margin: 0px;
+}
+.jumbotron-container .jumbotron-row .jumbotron-slide2:hover ~ .jumbotron-slide1{
+  width: 0%;
+  transition: ease-in .3s;
+  padding: 0px;
+  margin: 0px;
+}
+.jumbotron-container .jumbotron-row .jumbotron-slide2{
+  background-color: yellow;
+  z-index: 101;
+}
+.jumbotron-container .jumbotron-row .jumbotron-slide2:hover{
+  width: 100%;
+  z-index: 100;
+  transition: ease-in .3s;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+/*Quick Links*/
+.quick-links-container .quick-links-row .ql-boxes{
+  height: 300px;
+  border: solid 1px #fff;
+
+}
+.quick-links-container .quick-links-row .ql-box1{
+  background: url("/images/jumbotron-placeholder.png")center center no-repeat;
+  background-size: cover;
+}
+.quick-links-container .quick-links-row .ql-box2{
+  background: url("/images/jumbotron-placeholder.png")center center no-repeat;
+  background-size: cover;
+}
+.quick-links-container .quick-links-row .ql-box3{
+  background: url("/images/jumbotron-placeholder.png")center center no-repeat;
+  background-size: cover;
+}
