@@ -1,0 +1,521 @@
+/*
+Nick Kantelberg
+Last Edited 03/25/2017
+Npkantelberg@gmail.com
+*/
+
+/*******************TABEL OF CONTENTS*******************/
+/*
+General Styles ------------------ 20 - 33
+Jumbotron/Jumbotron Buttons ----- 35 - 103
+Call To Actions ----------------- 105 - 230
+Volunteer ----------------------- 232 - 246
+Projects ------------------------ 248 - 342
+Contact ------------------------- 344 - 395
+Footer -------------------------- 397 - 428
+Media Queries ------------------- 430 - 521
+*/
+/*******************END OF TABLE OF CONTENTS*******************/
+
+/* General Styles */
+*{
+  font-family: 'Lato','Roboto','Open Sans', sans-serif;
+}
+body{
+}
+.no-marg,
+.noMarg{
+	margin: 0;
+}
+.no-pad,
+.noPad{
+	padding: 0;
+}
+
+/* Jumbotron/Jumbotron Buttons */
+.jumbotron-box{
+	width: 100%;
+	background: #000;
+}
+.full-screen-jumbo{
+	width: 100%;
+	height: 100vh;
+}
+.full-screen-jumbo img{
+	width: 100%;
+	height: 100%;
+}
+.jumbotron-head-container{
+	position: absolute;
+	left: 0;
+	top: 5%;
+	width: 100%;
+}
+.jumbotron-head-text{
+	text-transform: uppercase;
+	position: relative;
+	margin-top: 5%;
+}
+.jumbotron-head-text p{
+	font-size: 50px;
+	text-align: center;
+}
+.jumbotron-logo{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.jumbotron-buttons-container{
+	position: absolute;
+	top: 55vh;
+	width: 100%;
+}
+.projects-btn{
+	padding-right: 50px;
+}
+.projects-btn span{
+	float: right;
+	background: #22efef;
+	color: #fff;
+}
+.projects-btn span:hover{
+	text-decoration: underline;
+}
+.contact-button{
+	padding-left: 50px;
+}
+.contact-btn span{
+	float: left;
+	background: #22efef;
+	color: #fff;
+}
+.contact-btn span:hover{
+	text-decoration: underline;
+}
+.jumbotron-button span{
+	padding: 15px 75px;
+	border: solid 2px #fff;
+	border-radius: 4px;
+	font-size: 20px;
+}
+
+/* Call To Actions */
+.cta-section{
+	padding-bottom: 2%;
+	padding-top: 2%;
+	background-color: #99cccc;
+}
+.ch-grid{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	padding-left: 0;
+}
+.ch-grid li{
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	cursor: default;
+}
+.ch-info-wrap{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	-webkit-perspective: 800px;
+	        perspective: 800px;
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	top: 20px;
+	left: 20px;
+	background: #f9f9f9 url(/images/bg.jpg);
+	box-shadow:
+		0 0 0 20px rgba(255,255,255,0.2),
+		inset 0 0 3px rgba(115,114, 23, 0.8);
+}
+.ch-info{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+}
+.ch-info > div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-position: center center;
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+}
+.ch-info .ch-info-back {
+	-webkit-transform: rotate3d(0,1,0,180deg);
+	        transform: rotate3d(0,1,0,180deg);
+	background: #000;
+	text-align: center;
+}
+.ch-img-1 {
+	background: url(/images/hands.jpg)center center no-repeat;
+	background-size: 275px;
+}
+.ch-img-2 {
+	background: url(/images/heart.jpg)center center no-repeat;
+	background-size: 275px;
+}
+.ch-img-3 {
+	background: url(/images/can-you.jpg)center center no-repeat;
+	background-size: 275px;
+}
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 14px;
+	margin: 0 15px;
+	padding: 40px 0 0 0;
+	height: 90px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow:
+		0 0 1px #fff,
+		0 1px 2px rgba(0,0,0,0.3);
+}
+.ch-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+}
+.ch-info p a {
+	display: block;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+.ch-info p a:hover {
+	color: rgba(255,242,34, 0.8);
+}
+.ch-item:hover .ch-info-wrap {
+	box-shadow: 0 0 0 0 rgba(255,255,255,0.8), inset 0 0 3px rgba(115,114, 23, 0.8);
+}
+.ch-item:hover .ch-info {
+	-webkit-transform: rotate3d(0,1,0,-180deg);
+	        transform: rotate3d(0,1,0,-180deg);
+}
+
+/* Volunteer */
+.volunteer-section{
+	background: url(/images/grass.jpg)center center no-repeat;
+	background-size: cover;
+}
+.volunteer-section img{
+  max-width: 454px;
+  width: 100%;
+	max-height: 420px;
+	height: 100%;
+}
+.volunteer-img-contaier{
+	padding: 2% 5%;
+  text-align: center;
+}
+
+/* Projects */
+.projects-section{
+	padding-bottom: 15px;
+	background: #333366;
+}
+.projects-row{
+	display: -webkit-flex;
+    display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	-webkit-flex-wrap: wrap;
+	    justify-content: space-around;
+	-webkit-justify-content: space-around;
+}
+.project-box{
+	height: 300px;
+	width: 300px;
+	margin: 0 10px 30px 10px;
+	border-radius: 4px;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	flex: 1 1 400px;
+}
+.project-box1{
+  background: url(/images/construction.jpeg)no-repeat center center;
+  background-size: 130%;
+}
+.project-box2{
+  background: url(/images/volunteer_donate.jpeg)no-repeat center center;
+  background-size: 130%;
+}
+.project-box3{
+  background: url(/images/volunteer_elderly.jpeg)no-repeat center center;
+  background-size: 130%;
+}
+.project-box4{
+  background: url(/images/cleaning_park_youth.jpeg)no-repeat center center;
+  background-size: 130%;
+}
+.project-box5{
+  background: url(/images/recycle.jpeg)no-repeat center center;
+  background-size: 130%;
+}
+.project-box6{
+  background: url(/images/planting_trees.jpeg)no-repeat center center;
+  background-size: 130%;
+}
+.project-box7{
+  background: url(/images/painting.jpeg)no-repeat center center;
+  background-size: 130%;
+}
+.project-box8{
+  background: url(/images/fence.jpeg)no-repeat center center;
+  background-size: 130%;
+}
+.project-box:hover{
+	background-size: 150%;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.project-box-info{
+	opacity: 0;
+	width: 100%;
+	height: 300px;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.project-box-info:hover{
+	opacity: 1;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.project-box-info p{
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 125px;
+}
+.projects-container{
+	padding-top: 30px;
+}
+.projects-text-container{
+	padding: 5% 15px 0 15px;
+	height: 420px;
+	color: #fff;
+}
+.projects-text-container p{
+	width: 100%;
+	height: auto;
+  font-size: 16px;
+}
+
+/* Contact */
+.email-form-box {
+	background: #ffcc66;
+	padding: 30px 0;
+}
+.email-form-box form{
+	width: 80%;
+  max-width: 700px;
+	margin: 0 auto;
+}
+.email-form-box .lname-input{
+  width: 45%;
+  float: right;
+  display: inline-block;
+}
+.email-form-box .fname-input{
+  width: 45%;
+  float: left;
+  display: inline-block;
+}
+.email-form-box .email-input{
+  clear: both;
+}
+.email-form-input input{
+	width: 100%;
+	margin-bottom: 15px;
+}
+.email-form-input textarea{
+	width: 100%;
+	height: 150px;
+}
+.email-form-box h2{
+	margin-bottom: 35px;
+}
+.email-form-btn{
+	float: left;
+}
+.email-form-btn input{
+	padding: 10px 15px;
+	border: none;
+	background: #22efef;
+	color: #222;
+	margin-top: 15px;
+	font-size: 16px;
+	border-radius: 4px;
+}
+.email-form-btn:hover input{
+	text-decoration: underline;
+}
+.reset-btn{
+	margin-left: 30px;
+}
+
+/* Footer */
+.footer-section{
+  background: #222;
+}
+.copyright-box{
+  color: #666;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.copyright-box p{
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+.social-col{
+  margin: 15px 0;
+}
+.social-boxs{
+  width: 200px;
+  margin: 0 auto;
+}
+.social-box{
+  float: left;
+  width: 25%;
+  display: inline-block;
+  max-width: 50px;
+}
+.social-icons-row .social-box img{
+	width: 100%;
+}
+
+/* media Queries */
+@media (-webkit-min-device-pixel-ratio:0) {
+	.safari-sm-4{
+		width: 33.29% !important;
+	}
+	.safari-md-4{
+		width: 33.29% !important;
+	}
+	.safari-lg-4{
+		width: 33.29% !important;
+	}
+}
+@media(max-width: 767px){
+	.nav-section .jumbotron-buttons-container{
+		display: none;
+	}
+	.jumbotron-buttons-section{
+		display: block;
+		background: #99cccc;
+		padding-top: 30px;
+	}
+	.jumbotron-buttons-container{
+		position: relative;
+		top: 0;
+	}
+	.jumbotron-button{
+		background: #99cccc;
+	}
+	.jumbotron-head-text p{
+		font-size: 45px;
+    color: #fff;
+	}
+  .projects-text-container p{
+    font-size: 13px;
+  }
+	.projects-btn{
+		float: none;
+		text-align: center;
+		padding: 0;
+		margin-bottom: 15px;
+	}
+	.projects-btn span{
+		display: inline-block;
+		width: 250px;
+		float: none;
+		margin: 0 auto;
+	}
+	.contact-btn{
+		float: none;
+		text-align: center;
+		padding: 0;
+	}
+	.contact-btn span{
+		display: inline-block;
+		width: 250px;
+		float: none;
+		margin: 0 auto;
+	}
+	.jumbotron-button-span{
+		padding: 15px 0;
+	}
+  .email-form-box .lname-input{
+    width: 100%;
+    float: none;
+    display: block;
+  }
+  .email-form-box .fname-input{
+    width: 100%;
+    float: none;
+    display: block;
+  }
+}
+@media(max-width: 991px){
+	.volunteer-row{
+		max-height: none;
+	}
+}
+@media(max-width: 350px){
+  .project-box1,
+  .project-box2,
+  .project-box3,
+  .project-box4,
+  .project-box5,
+  .project-box6,
+  .project-box7,
+  .project-box8{
+    background-size: 150%;
+  }
+  .project-box:hover{
+    background-size: 170%;
+  }
+}

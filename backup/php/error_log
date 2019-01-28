@@ -1,0 +1,15 @@
+[01-Jul-2017 18:04:23 America/Denver] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home4/nkantelb/public_html/php/testing.php on line 16
+[01-Jul-2017 18:04:30 America/Denver] PHP Notice:  Undefined index: textfield in /home4/nkantelb/public_html/php/testing.php on line 12
+[01-Jul-2017 18:09:05 America/Denver] PHP Notice:  Undefined index: favcolor in /home4/nkantelb/public_html/php/testing.php on line 21
+[01-Jul-2017 18:09:05 America/Denver] PHP Notice:  Undefined index: favanimal in /home4/nkantelb/public_html/php/testing.php on line 22
+[01-Jul-2017 18:12:31 America/Denver] PHP Parse error:  syntax error, unexpected '$_SESSION' (T_VARIABLE) in /home4/nkantelb/public_html/php/testing.php on line 22
+[01-Jul-2017 18:12:43 America/Denver] PHP Parse error:  syntax error, unexpected '$username' (T_VARIABLE), expecting ',' or ';' in /home4/nkantelb/public_html/php/testing.php on line 27
+[01-Jul-2017 18:14:17 America/Denver] PHP Parse error:  syntax error, unexpected '$username' (T_VARIABLE) in /home4/nkantelb/public_html/php/testing.php on line 28
+[01-Jul-2017 18:14:39 America/Denver] PHP Parse error:  syntax error, unexpected '$username' (T_VARIABLE) in /home4/nkantelb/public_html/php/testing.php on line 28
+[01-Jul-2017 18:17:38 America/Denver] PHP Notice:  Undefined index: textfield in /home4/nkantelb/public_html/php/testing.php on line 15
+[01-Jul-2017 18:17:57 America/Denver] PHP Notice:  Undefined index: textfield in /home4/nkantelb/public_html/php/testing.php on line 15
+[01-Jul-2017 18:18:28 America/Denver] PHP Parse error:  syntax error, unexpected '$username' (T_VARIABLE) in /home4/nkantelb/public_html/php/testing.php on line 28
+[01-Jul-2017 18:18:39 America/Denver] PHP Parse error:  syntax error, unexpected '$username' (T_VARIABLE) in /home4/nkantelb/public_html/php/testing.php on line 28
+[01-Jul-2017 18:18:39 America/Denver] PHP Parse error:  syntax error, unexpected '$username' (T_VARIABLE) in /home4/nkantelb/public_html/php/testing.php on line 28
+[01-Jul-2017 18:18:46 America/Denver] PHP Notice:  Undefined index: textfield in /home4/nkantelb/public_html/php/testing.php on line 15
+[01-Jul-2017 18:19:10 America/Denver] PHP Notice:  Undefined index: textfield in /home4/nkantelb/public_html/php/testing.php on line 15

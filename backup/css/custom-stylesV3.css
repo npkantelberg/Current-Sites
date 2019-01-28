@@ -1,0 +1,109 @@
+*{
+    font-family: 'Lato','Roboto','Open Sans', sans-serif;
+}
+/*wrapper*/
+.wrapper{
+	background-image: url("../images/city.png");
+	background-attachment: fixed;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper .side-items{
+
+}
+.wrapper .side-items-container{
+
+}
+/*Spacer*/
+.spacer{
+	height: 150px;
+	background: transparent;
+}
+/*Main Nav*/
+.wrapper-inner{
+	float: left;
+	width: 80%;
+	background: #fff;
+}
+.main-nav,
+.main {
+  position: fixed;
+  top: 0; 
+}
+.main-nav {
+  z-index: 150;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+p{
+	width: 50%;
+}
+.header-container{
+  background-color: #2e2e2e;
+  max-height: 150px;
+  width: 80%;
+}
+.header-container img{
+  max-height: 150px;
+}
+.menu-items-container{
+	text-align: right;
+}
+.menu-items{
+  background-color: transparent;
+  padding: 62px 45px;
+  text-align: center;
+  display: inline-block;
+}
+.menu-item1:hover{
+  background-color: #0099ff;
+}
+.menu-item2:hover{
+  background-color: #0099ff;
+}
+.menu-item3:hover{
+  background-color: #0099ff;
+}
+.menu-item4:hover{
+  background-color: #0099ff;
+}
+.menu-item5:hover{
+  background-color: #0099ff;
+}
+.menu-item6:hover{
+  background-color: #0099ff;
+}
+.header-container .menu-items-container span{
+  color: #fff;
+  font-size: 18px;
+}
+/*Quick Links*/
+.main-content-container{
+
+}
+.main-content-container .quick-link-row{
+
+}
+.main-content-container .quick-link-row .quick-link-items{
+	padding: 0;
+	margin: 0;
+}
+.main-content-container .quick-link-row .quick-link-items .quick-link-items-inner{
+	overflow: hidden;
+}
+.main-content-container .quick-link-row .quick-link-items .quick-link-items-inner:hover{
+
+}
+.main-content-container .quick-link-row .quick-link-items .quick-link-item1{
+	background: url("../images/templates.png")center center no-repeat;
+	background-size: cover;
+}
+.main-content-container .quick-link-row .quick-link-items .quick-link-item1:hover{
+	background-size: 150%;
+}
+/*Footer*/
+.footer-container .footer-row .footer{
+	height: 500px;
+	background-color: #2e2e2e;
+	opacity: 0.5;
+}
