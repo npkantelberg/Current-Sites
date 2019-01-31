@@ -1,46 +1,46 @@
 <?php
-	$fname = $_POST['fname'];
-	$lname = $_POST['lname'];
-	$email = $_POST['email'];
-	$message = $_POST['message'];
-	$formcontent="From: $fname $lname \n Message: $message";
-	$recipient = "npkantelberg@gmail.com";
-	$subject = "Contact Form";
-	$mailheader = "From: $email \r\n";
-	$error = "";
+  $fname = $_POST['fname'];
+  $lname = $_POST['lname'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+  $formcontent="From: $fname $lname \n Message: $message";
+  $recipient = "npkantelberg@gmail.com";
+  $subject = "Contact Form";
+  $mailheader = "From: $email \r\n";
+  $error = "";
 
-	if(empty($_POST["fname"]) and empty($_POST["email"]) and empty($_POST["message"]) and empty($_POST["lname"])){
-		showPage();
-		exit();
-	} else if(empty($_POST["fname"])){
-		$error = "Please enter first name.";
-		showPage($error);
-		exit();
-	} else if(empty($_POST["lname"])){
-		$error = "Please enter last name.";
-		showPage($error);
-		exit();
-	} else if(empty($_POST["email"])) {
-		$error = "Pleae enter your email.";
-		showPage($error);
-		exit();
-	} else if(empty($_POST["message"])) {
-		$error = "Pleae give some information.";
-		showPage($error);
-		exit();
-	} else {
-		$error = "Thank You!";
-		$_SESSION["loggedin"] = TRUE;
-		mail($recipient, $subject, $formcontent, $mailheader) or die($error);
-		return showPage($error);
-	}
-	function showPage($error){
+  if(empty($_POST["fname"]) and empty($_POST["email"]) and empty($_POST["message"]) and empty($_POST["lname"])){
+    showPage($error);
+    exit();
+  } else if(empty($_POST["fname"])){
+    $error = "Please enter first name.";
+    showPage($error);
+    exit();
+  } else if(empty($_POST["lname"])){
+    $error = "Please enter last name.";
+    showPage($error);
+    exit();
+  } else if(empty($_POST["email"])) {
+    $error = "Please enter your email.";
+    showPage($error);
+    exit();
+  } else if(empty($_POST["message"])) {
+    $error = "Please give some information.";
+    showPage($error);
+    exit();
+  } else {
+    $error = "Thank You!";
+    mail($recipient, $subject, $formcontent, $mailheader) or die($error);
+    return showPage($error);
+  }
+  function showPage($error){
 ?>
+
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.css">
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="/css/Theme1/theme1.css">
+	<link rel="stylesheet" type="text/css" href="http://nkantelberg.com/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="http://nkantelberg.com/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="http://nkantelberg.com/css/Theme1/theme1.css">
 	<script
 		src="https://code.jquery.com/jquery-3.1.1.js"
 		integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
@@ -55,12 +55,12 @@
 		<div class="row jumbotron-row">
 			<div class="col-xs-12 noPad">
 				<div class="full-screen-jumbo">
-					<img src="/images/sunset2.jpg" />
+					<img src="http://nkantelberg.com/images/sunset2.jpg" />
 				</div>
 				<div class="container-fluid jumbotron-head-container">
 					<div class="row jumbotron-head-row">
 						<div class="col-xs-12 col-sm-4 jumbotron-logo">
-							<img src="/images/logo.png" />
+							<img src="http://nkantelberg.com/images/logo.png" />
 						</div>
 						<div class="col-xs-12 col-sm-8 jumbotron-head-text">
 							<p>Fox Valley Volunteer</p>
@@ -105,8 +105,8 @@
 								<div class="ch-info">
 									<div class="ch-info-front ch-img-1"></div>
 									<div class="ch-info-back">
-										<h3>Heading</h3>
-										<p>Info 1<a href="#">Info 2</a></p>
+										<h3>Call To Action</h3>
+										<p>Short Content<a href="#">Short Content</a></p>
 									</div>
 								</div>
 							</div>
@@ -122,8 +122,8 @@
 								<div class="ch-info">
 									<div class="ch-info-front ch-img-2"></div>
 									<div class="ch-info-back">
-										<h3>Bears Type</h3>
-										<p>Info 1<a href="#">Info 2</a></p>
+										<h3>Call To Action</h3>
+										<p>Short Content<a href="#">Short Content</a></p>
 									</div>
 								</div>
 							</div>
@@ -139,8 +139,8 @@
 								<div class="ch-info">
 									<div class="ch-info-front ch-img-3"></div>
 									<div class="ch-info-back">
-										<h3>Bears Type</h3>
-										<p>Info 1<a href="#">Info 2</a></p>
+										<h3>Call To Action</h3>
+										<p>Short Content<a href="#">Short Content</a></p>
 									</div>
 								</div>
 							</div>
@@ -162,7 +162,7 @@
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-md-pull-6 noPad">
 				<div class="volunteer-img-contaier">
-					<img src="/images/earth.png">
+					<img src="http://nkantelberg.com/images/earth.png">
 				</div>
 			</div>
 		</div>
@@ -235,36 +235,31 @@
 		<div class="row contact-row">
 			<div class="col-xs-12 email-form-box">
 				<form action="" method="POST">
-					<h2>We look forward to hearing from you!</h2>
-			   		<div class="email-form-input fname-input">
-			   			<p>First Name</p>
-			   			<input type="text" name="fname">
-			   		</div>
-
+					<h2>I look forward to hearing from you!</h2>
+						<div class="email-form-input fname-input">
+							<p>First Name</p>
+							<input class="text-element" type="text" name="fname">
+						</div>
 						<div class="email-form-input lname-input">
-			   			<p>Last Name</p>
-			   			<input type="text" name="lname">
-			   		</div>
-
-				    <div class="email-form-input email-input">
-				    	<p>Email</p>
-				    	<input name="email" type="text">
-				    </div>
-
-				    <div class="email-form-input message-input">
-					    <p>Message</p>
-					    <textarea name="message"></textarea>
-				    </div>
-
-				    <div class="email-form-btn submit-btn">
-						<input id="submit" name="submit" type="submit">
-				    </div>
-
-				    <div class="email-form-btn reset-btn">
-				    	<input type="reset" value="Clear">
-				    </div>
-				    <p><?php echo $error; ?></p>
-			    </form>
+							<p>Last Name</p>
+							<input class="text-element" type="text" name="lname">
+						</div>
+						<div class="email-form-input email-input">
+							<p>Email</p>
+							<input class="text-element" name="email" type="text">
+						</div>
+						<div class="email-form-input message-input">
+							<p>Message</p>
+							<textarea class="text-element" name="message"></textarea>
+						</div>
+						<div class="email-form-btn submit-btn">
+							<input id="submit" name="submit" type="submit">
+						</div>
+						<div class="email-form-btn reset-btn">
+							<input type="reset" value="Clear">
+						</div>
+						<p><?php echo $error; ?></p>
+					</form>
 			</div>
 		</div>
 	</div>
@@ -278,16 +273,16 @@
 					<div class="col-xs-12 social-col">
 						<div class="social-boxs">
 							<div class="social-box facebook-box">
-								<a href="http://www.facebook.com"><img src="/images/facebook-big.jpg"></a>
+								<a href="http://www.facebook.com"><img src="http://nkantelberg.com/images/facebook-big.jpg"></a>
 							</div>
 							<div class="social-box twitter-box">
-								<a href="http://www.twitter.com"><img src="/images/twitter-big.jpg"></a>
+								<a href="http://www.twitter.com"><img src="http://nkantelberg.com/images/twitter-big.jpg"></a>
 							</div>
 							<div class="social-box youtube-box">
-								<a href="http://www.youtube.com"><img src="/images/youtube-big.jpg"></a>
+								<a href="http://www.youtube.com"><img src="http://nkantelberg.com/images/youtube-big.jpg"></a>
 							</div>
 							<div class="social-box instagram-box">
-								<a href="http://www.instagram.com"><img src="/images/instagram-big.jpg"></a>
+								<a href="http://www.instagram.com"><img src="http://nkantelberg.com/images/instagram-big.jpg"></a>
 							</div>
 						</div>
 					</div>
@@ -314,7 +309,7 @@
 	});
 </script>
 
-
+</html>
 <?php
 	}
 ?>

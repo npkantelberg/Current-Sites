@@ -1,4 +1,3 @@
-/***** Variables *****/
 /***** Default Styles *****/
 * {
   font-family: 'Lato','Roboto','Open Sans', sans-serif; }
@@ -11,22 +10,16 @@ body {
 
 .coming-soon {
   margin-left: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 90vh;
   font-size: 40px;
   color: #00ADEE; }
 
 .coming-soon p {
   padding: 20px;
-  background: #222;
+  background: #333;
   border-radius: 4px; }
 
 @media (max-width: 767px) {
@@ -42,12 +35,8 @@ body {
   background-color: #00ADEE; }
 
 .logo-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 50px; }
 
 .logo-box img {
@@ -63,42 +52,6 @@ body {
 .menu-logo-container svg .st0 {
   -webkit-animation: dash 7s linear forwards, fill 3s linear forwards;
   animation: dash 7s linear forwards, fill 3s linear forwards; }
-
-@-webkit-keyframes fill {
-  0% {
-    fill: #00ADEE;
-    fill-opacity: 0; }
-  10% {
-    fill: #00ADEE;
-    fill-opacity: 0.1; }
-  20% {
-    fill: #00ADEE;
-    fill-opacity: 0.2; }
-  30% {
-    fill: #00ADEE;
-    fill-opacity: 0.3; }
-  40% {
-    fill: #00ADEE;
-    fill-opacity: 0.4; }
-  50% {
-    fill: #00ADEE;
-    fill-opacity: 0.5; }
-  60% {
-    fill: #00ADEE;
-    fill-opacity: 0.6; }
-  70% {
-    fill: #00ADEE;
-    -webkit-fill: #00ADEE;
-    fill-opacity: 0.7; }
-  80% {
-    fill: #00ADEE;
-    fill-opacity: 0.8; }
-  90% {
-    fill: #00ADEE;
-    fill-opacity: 0.9; }
-  100% {
-    fill: #00ADEE;
-    fill-opacity: 1; } }
 
 @keyframes fill {
   0% {
@@ -144,9 +97,6 @@ body {
 @-webkit-keyframes {
   to {
     stroke-dashoffset: 0; } }
-@-webkit-keyframes dash {
-  to {
-    stroke-dashoffset: 0; } }
 @keyframes dash {
   to {
     stroke-dashoffset: 0; } }
@@ -167,7 +117,6 @@ body {
 
 .big-nav-menu .menu ul li a:hover {
   background-color: #00ADEE;
-  -webkit-transition: .3s all;
   transition: .3s all; }
 
 .menu {
@@ -213,27 +162,22 @@ body {
 
 .item-home a:hover > span {
   background: #00ADEE;
-  -webkit-transition: all .2s;
   transition: all .2s; }
 
 .item-blog a:hover > span {
   background: #00ADEE;
-  -webkit-transition: all .2s;
   transition: all .2s; }
 
 .item-themes a:hover > span {
   background: #00ADEE;
-  -webkit-transition: all .2s;
   transition: all .2s; }
 
 .item-videos a:hover > span {
   background: #00ADEE;
-  -webkit-transition: all .2s;
   transition: all .2s; }
 
 .item-contact a:hover > span {
   background: #00ADEE;
-  -webkit-transition: all .2s;
   transition: all .2s; }
 
 .social-menu-container {
@@ -288,8 +232,7 @@ body {
   background: #222;
   margin-bottom: 10%;
   display: block;
-  -webkit-box-shadow: 1px 2px 5px #333;
-          box-shadow: 1px 2px 5px #333;
+  box-shadow: 1px 2px 5px #333;
   border-radius: 4px; }
 
 .content-box:hover {
@@ -441,13 +384,11 @@ body {
   position: relative;
   display: inline-block;
   top: 160px;
-  -webkit-transition: .2s all;
   transition: .2s all;
   opacity: 0; }
 
 .face-box.open-eye {
   top: -20px;
-  -webkit-transition: .2s all;
   transition: .2s all;
   opacity: 100; }
 
@@ -458,9 +399,7 @@ body {
   width: 100%; }
 
 .eye {
-  -webkit-transform: rotate(25deg);
-          transform: rotate(25deg);
-  -webkit-transition: .1s all;
+  transform: rotate(25deg);
   transition: .1s all;
   display: inline-block;
   max-width: 30px; }
@@ -520,12 +459,8 @@ body {
     float: none; }
 
   .footer-item-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    justify-content: center; }
 
   .contact-wrapper {
     margin-left: 0px;
@@ -553,4 +488,4 @@ body {
     height: 500px; } }
 /***** End Media Queries *****/
 
-/*# sourceMappingURL=custom-stylesV4.css.map */
+/*# sourceMappingURL=custom-styles-pre.css.map */

@@ -24,5 +24,5 @@ include_once('../php/menu.php');
 
 
 <?php
-include_once('php/footer.php');
+include_once('../php/footer.php');
 ?>

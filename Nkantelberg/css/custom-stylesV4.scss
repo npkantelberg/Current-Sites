@@ -1,0 +1,551 @@
+
+
+/***** Variables *****/
+$logo-blue: #00ADEE;
+$background-color: #222;
+
+
+
+
+/***** Default Styles *****/
+
+*{
+  font-family: 'Lato','Roboto','Open Sans', sans-serif;
+}
+body{
+  background: url(http://api.thumbr.it/whitenoise-361x370.png?background=8c8b85ff&noise=c7c7c7&density=19&opacity=37);
+}
+.clearfix{
+  clear: both;
+}
+.coming-soon{
+  margin-left: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  font-size: 40px;
+  color: $logo-blue;
+}
+.coming-soon p{
+  padding: 20px;
+  background: $background-color;
+  border-radius: 4px;
+}
+@media(max-width: 767px){
+  .coming-soon{
+    margin-left: 0;
+    font-size: 20px;
+  }
+}
+/***** End Default Styles *****/
+
+/***** Nav and Side Bar Menu *****/
+.nav-section{
+  display: none;
+}
+.nav-section .navbar-inverse .navbar-toggle:hover{
+  background-color: $logo-blue;
+}
+.logo-box{
+  display: flex;
+  justify-content: center;
+  width: 50px;
+}
+.logo-box img{
+  width: 150px;
+  height: 150px;
+}
+.logo-box svg,
+.menu-logo-container svg{
+  width: 100%;
+  height: auto;
+}
+.logo-box svg .st0,
+.menu-logo-container svg .st0{
+  -webkit-animation: dash 7s linear forwards, fill 3s linear forwards;
+  animation: dash 7s linear forwards, fill 3s linear forwards;
+}
+@keyframes fill {
+  0%{
+    fill:$logo-blue;
+    fill-opacity: 0;
+  }
+  10%{
+    fill: $logo-blue;
+    fill-opacity: 0.1;
+  }
+  20%{
+    fill: $logo-blue;
+    fill-opacity: 0.2;
+  }
+  30%{
+    fill: $logo-blue;
+    fill-opacity: 0.3;
+  }
+  40%{
+    fill: $logo-blue;
+    fill-opacity: 0.4;
+  }
+  50%{
+    fill: $logo-blue;
+    fill-opacity: 0.5;
+  }
+  60%{
+    fill: $logo-blue;
+    fill-opacity: 0.6;
+  }
+  70%{
+    fill: $logo-blue;
+    -webkit-fill: $logo-blue;
+    fill-opacity: 0.7;
+  }
+  80%{
+    fill: $logo-blue;
+    fill-opacity: 0.8;
+  }
+  90%{
+    fill: $logo-blue;
+    fill-opacity: 0.9;
+  }
+  100%{
+    fill: $logo-blue;
+    fill-opacity: 1;
+  }
+}
+.stroke {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  animation: dash 7s linear forwards;
+  -webkit-animation: dash 7s linear forwards;
+}
+@-webkit-keyframes{
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.big-nav-menu .navbar-collapse{
+  width: 66.666666%;
+}
+
+.big-nav-menu .navbar-nav{
+  float: none;
+}
+.big-nav-menu .nav li{
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.big-nav-menu .menu ul li a{
+  padding: 15px 0;
+  font-size: 22px
+}
+.big-nav-menu .menu ul li a:hover{
+  background-color: $logo-blue;
+  transition: .3s all;
+}
+.menu{
+  float: right;
+}
+.sticky-menu-section{
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: #fff;
+  display: inline-block;
+  overflow-x: hidden;
+  max-width: 300px;
+  overflow: hidden;
+}
+.menu-container{
+  width: 320px;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.menu-logo-container{
+  width: 70%;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+.menu-logo-container img{
+  width: 100%;
+}
+.menu-items-container{
+    padding-bottom: 70px;
+}
+.menu-item a:hover{
+  text-decoration: none;
+}
+.menu-item a span{
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 22px;
+  color: #fff;
+  width: 100%;
+}
+.item-home a:hover > span{
+  background: $logo-blue;
+  transition: all .2s;
+}
+.item-blog a:hover > span{
+  background: $logo-blue;
+  transition: all .2s;
+}
+.item-themes a:hover > span{
+  background: $logo-blue;
+  transition: all .2s;
+}
+.item-videos a:hover > span{
+  background: $logo-blue;
+  transition: all .2s;
+}
+.item-contact a:hover > span{
+  background: $logo-blue;
+  transition: all .2s;
+}
+.social-menu-container{
+  width: 100%;
+  margin-bottom: 70px;
+}
+.social-box{
+  width: 100%;
+  display: inline-block;
+  height: 50px;
+  margin-top: 15px;
+}
+.social-box a{
+  margin: 0 auto;
+}
+.twitter-box a{
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: url("../images/twitter.png")center left;
+}
+
+.twitter-box a:hover{
+  background-position: right;
+}
+.codepen-box a{
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: url("../images/codepen.png")center left;
+}
+
+.codepen-box a:hover{
+  background-position: right;
+}
+.youtube-box a{
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: url("../images/youtube.png")center left;
+}
+
+.youtube-box a:hover{
+  background-position: right;
+}
+/***** End Nav and Side Bar Menu *****/
+
+/***** Main Content *****/
+.main-content{
+  margin-left: 300px;
+  color: #fff;
+  padding: 30px;
+}
+.content-box{
+  color: #9d9d9d;
+  background: $background-color;
+  margin-bottom: 10%;
+  display: block;
+  box-shadow: 1px 2px 5px #333;
+  border-radius: 4px;
+}
+.content-box:hover{
+  text-decoration: none;
+  color: #9d9d9d;
+  cursor: pointer;
+}
+.content-header{
+  margin: 0 auto 1% 10%;
+  padding-top: 3%;
+}
+.content-header span{
+  font-size:28px;
+}
+.content-box-content{
+  margin: 0 10% 1% 10%;
+  padding-bottom: 3%;
+}
+.content-box-content span{
+  font-size: 16px;
+  line-height: 2;
+}
+
+/***** End Main Content *****/
+
+/***** Footer *****/
+.footer-section{
+  background-color: $background-color;
+  width: calc(100% - 300px);
+  float: right;
+  margin-top: 30px;
+}
+.footer-item-row{
+  color: #9d9d9d;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer-item-boxR {
+  text-align: right;
+}
+
+/***** End Footer *****/
+
+/***** Theme section *****/
+
+.theme-box{
+  width: calc(100% - 300px);
+  float: right;
+  padding-left: 5%;
+}
+.theme-box img{
+  max-width: 250px;
+  width: 100%;
+  border-radius: 4px;
+}
+.theme-box p{
+  font-size:30px;
+}
+.theme-box span{
+  font-size: 18px;
+}
+.theme-box-inner{
+  background: $logo-blue;
+  padding: 30px 60px 30px 20px;
+  margin-top: 50px;
+  margin-right: 60px;
+  border-radius: 7px;
+  color: #fff;
+}
+/***** End Theme Section *****/
+
+/***** Contact Section *****/
+
+.contact-wrapper{
+  margin-left: 250px;
+  width: calc(100% - 300px);
+  padding-right: 30px;
+}
+.contact-wrapper .contact-section{
+  margin: 50px auto;
+  width: 100%;
+  max-width: 750px;
+  color: $logo-blue;
+  background: $background-color;
+  border-radius: 4px;
+  padding: 25px;
+}
+.contact-wrapper .email-form-input textarea,
+.contact-wrapper .email-form-input input{
+  width: 100%;
+  color: $background-color;
+}
+.contact-wrapper .email-form-btn{
+  display: inline-block;
+}
+.contact-wrapper .email-form-btn input{
+  border: 0;
+  border-radius: 4px;
+  color: $background-color;
+  margin-top: 25px;
+  padding: 5px 15px;
+}
+.contact-wrapper .email-form-btn.reset-btn input{
+  margin-left: 15px;
+}
+.footer-wrapper{
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.page-wrapper{
+  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=8c8b85ff&noise=c7c7c7&density=19&opacity=37");
+  padding: 50px 0;
+}
+.contact-wrapper{
+  padding-right: 30px;
+}.contact-wrapper .page-wrapper{
+  padding: 0px;
+}
+.contact-wrapper .face-container{
+  margin-top: 0px;
+}
+.contact-wrapper .contact-section{
+  margin: 50px auto;
+  max-width: 750px;
+  color: $logo-blue;
+  background: $background-color;
+  border-radius: 4px;
+  padding: 25px;
+  position: relative;
+}
+.contact-wrapper .email-form-input textarea,
+.contact-wrapper .email-form-input input{
+  width: 100%;
+}
+.contact-wrapper .email-form-btn{
+  display: inline-block;
+}
+.contact-wrapper .email-form-btn input{
+  border: 0;
+  border-radius: 4px;
+  color: $background-color;
+  margin-top: 25px;
+  padding: 5px 15px;
+}
+.contact-wrapper .email-form-btn.reset-btn input{
+  margin-left: 15px;
+}
+
+
+
+
+.face-container{
+	text-align: center;
+	margin-top: 50px;
+}
+.face-box{
+	position: relative;
+	display: inline-block;
+  top: 160px;
+  transition: .2s all;
+  opacity: 0;
+}
+.face-box.open-eye{
+  top: -20px;
+  transition: .2s all;
+  opacity: 100;
+}
+.face{
+  max-width: 250px;
+}
+.face img{
+  width: 100%;
+}
+.eye{
+	transform: rotate(25deg);
+	transition: .1s all;
+	display: inline-block;
+  max-width: 30px;
+}
+.eye img{
+  width: 100%;
+}
+.eye:nth-child(1){
+	position: absolute;
+	top: 100px;
+  left: 145px;
+}
+.eye:nth-child(2){
+	position: absolute;
+	top: 100px;
+	left: 75px;
+}
+.contact-wrapper .contact-section{
+	width: 400px;
+	margin-top: -50px;
+	z-index: 100;
+	background: $background-color;
+}
+.face-container{
+	z-index: 10;
+}
+
+
+
+
+/***** End Contact Section *****/
+
+/***** Media Queries *****/
+
+@media(max-width: 767px){
+  .nav-section{
+    display: block;
+  }
+  .small-nav-menu .logo-box{
+    display: inline-block;
+  }
+  .small-nav-menu .logo-box img{
+    width: 50px;
+    height: 50px;
+  }
+  .small-nav-menu .navbar-inverse .navbar-collapse{
+    border: none;
+  }
+  .nav-section .big-nav-menu .navbar-collapse{
+    width: 100%;
+  }
+  .nav-section .big-nav-menu li{
+    margin: 0 auto;
+  }
+  .sticky-menu-section{
+    display: none;
+  }
+  .main-content{
+    margin-left: 0;
+  }
+  .footer-section{
+    width: 100%;
+    float: none;
+  }
+  .footer-item-box{
+    display: flex;
+    justify-content: center;
+  }
+  .contact-wrapper{
+    margin-left: 0px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .contact-wrapper .contact-section{
+    padding: 25px 0;
+  }
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+  .sticky-menu-section {
+    height: 1024px;
+  }
+}
+
+/**
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+  .sticky-menu-section {
+    height: 768px;
+  }
+}
+
+/**
+ * iPhone 5
+ * You can also target devices with aspect ratio.
+ */
+@media screen and (device-aspect-ratio: 40/71) {
+  .sticky-menu-section {
+    height: 500px;
+  }
+}
+
+/***** End Media Queries *****/
