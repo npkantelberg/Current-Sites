@@ -4,9 +4,26 @@
 $logo-blue: #00ADEE;
 $background-color: #222;
 
+.coming-soon{
+  margin-left: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  font-size: 40px;
+  color: $logo-blue;
+  p{
+    padding: 20px;
+    background: $background-color;
+    border-radius: 4px;
+  }
+  @media(max-width: 767px){
+    margin-left: 0;
+    font-size: 20px;
+  }
+}
 
 
- 
 /***** Default Styles *****/
 
 *{
