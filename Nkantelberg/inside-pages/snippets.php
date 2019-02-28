@@ -1,3 +1,4 @@
+<!--
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
-
+-->
 <?php
 include_once('../php/menu.php');
 ?>
@@ -154,19 +155,19 @@ include_once('../php/menu.php');
 		<div class="cta">
 			<a class="cta-circle-overlay" href="">About Us</a>
 			<div class="cta-circle-image">
-				<img src="/images/lazy-cta.jpg" alt="">
+				<img src="http://nkantelberg.com/images/lazy-cta.jpg" alt="">
 			</div>
 		</div>
 		<div class="cta">
 			<a class="cta-circle-overlay" href="">Contact Us</a>
 			<div class="cta-circle-image">
-				<img src="/images/contact-cta.jpg" alt="">
+				<img src="http://nkantelberg.com/images/contact-cta.jpg" alt="">
 			</div>
 		</div>
 		<div class="cta">
 			<a class="cta-circle-overlay" href="">Testimonials</a>
 			<div class="cta-circle-image">
-				<img src="/images/testimonials-cta.jpg" alt="">
+				<img src="http://nkantelberg.com/images/testimonials-cta.jpg" alt="">
 			</div>
 		</div>
 	</div>
@@ -175,7 +176,7 @@ include_once('../php/menu.php');
 		<div class="simple-cta">
 			<a class="simple-cta-inner">
 				<div class="simple-cta-icon">
-					<img src="/images/shop-icon.png" alt="">
+					<img src="http://nkantelberg.com/images/shop-icon.png" alt="">
 				</div>
 				<div class="simple-cta-text">
 					Shop
@@ -185,7 +186,7 @@ include_once('../php/menu.php');
 		<div class="simple-cta">
 			<a class="simple-cta-inner">
 				<div class="simple-cta-icon">
-					<img src="/images/specials-icon.png" alt="">
+					<img src="http://nkantelberg.com/images/specials-icon.png" alt="">
 				</div>
 				<div class="simple-cta-text">
 					Specials
@@ -195,7 +196,7 @@ include_once('../php/menu.php');
 		<div class="simple-cta">
 			<a class="simple-cta-inner">
 				<div class="simple-cta-icon">
-					<img src="/images/about-icon.png" alt="">
+					<img src="http://nkantelberg.com/images/about-icon.png" alt="">
 				</div>
 				<div class="simple-cta-text">
 					About Us
@@ -205,7 +206,7 @@ include_once('../php/menu.php');
 		<div class="simple-cta">
 			<a class="simple-cta-inner">
 				<div class="simple-cta-icon">
-					<img src="/images/contact-icon.png" alt="">
+					<img src="http://nkantelberg.com/images/contact-icon.png" alt="">
 				</div>
 				<div class="simple-cta-text">
 					Contact Us
