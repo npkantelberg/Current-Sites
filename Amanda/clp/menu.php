@@ -27,8 +27,8 @@
                 <li><a href="http://amandaleaphotography.com/clp/couples.php" class="menu-sub-item">Couples</a></li>
               </ul>
             </li>
+            <li class="menu-item"><a href="http://amandaleaphotography.com/clp/contact.php">Contact</a></li>
             <li class="menu-item"><a href="http://amandaleaphotography.com/clp/about.php">About</a></li>
-            <!--<li class="menu-item"><a href="http://amandaleaphotography.com/clp/contact.php">Contact</a></li>-->
             <!--li class="menu-item"><a href="http://amandaleaphotography.com/clp/misc.php">Investment</a></li>-->
             <li class="menu-item menu-item-fix"><a href="http://amandaleaphotography.com/clp/investments.php">Investment</a></li>
             <li class="menu-item menu-item-fix"><span>Extra! Extra!</span>
