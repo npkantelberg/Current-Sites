@@ -10,16 +10,16 @@
     </div>
     <div class="circle-menu-items">
       <div class="circle-menu-item">
-        <span>Home</span>
+        <span class="home">Home</span>
       </div>
       <div class="circle-menu-item">
-        <span>About</span>
+        <span class="about">About</span>
       </div>
       <div class="circle-menu-item">
-        <span>Contact</span>
+        <span class="contact">Contact</span>
       </div>
       <div class="circle-menu-item">
-        <span>Menu</span>
+        <span class="rent">Rent Space</span>
       </div>
     </div>
   </div>
