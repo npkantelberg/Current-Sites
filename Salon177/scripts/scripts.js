@@ -3,7 +3,6 @@ $('.circle-menu-toggle').click(function(){
   $('.circle-menu-items').toggleClass('circle-items-active');
   $('.circle-menu-back').toggleClass('circle-back-active');
   $('.circle-menu-wrapper').toggleClass('circle-menu-wrapper-active');
-
 });
 $(".about").click(function() {
   $('html,body').animate({
@@ -18,6 +17,11 @@ $(".home").click(function() {
 $(".contact").click(function() {
   $('html,body').animate({
       scrollTop: $(".about-section").offset().top},
+      'slow');
+});
+$(".rent").click(function() {
+  $('html,body').animate({
+      scrollTop: $(".rent-space-section").offset().top},
       'slow');
 });
 

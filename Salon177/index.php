@@ -53,6 +53,7 @@
 					<div class="contact-content">
 						<div class="contact-item">
 							<a class="link" href="tel:9207662003">(920)766-2003</a>
+							<a href="mailto:salon177@att.net">Salon177@att.net</a>
 						</div>
 						<div class="contact-item">
 							<p class="address">177 W. Wisconsin Avenue</p>
@@ -73,7 +74,7 @@
             </div>
             <div class="hours-item">
               <span>Wednesday</span>
-              <span>8-5</span>
+              <span>Closed</span>
             </div>
             <div class="hours-item">
               <span>Thursday</span>
@@ -136,6 +137,31 @@
 		</div>
 	</div>
 </section>
+<section class="rent-space-section">
+	<div class="container rent-container">
+		<div class="row rent-row">
+			<h1>Rent your own private work station.</h1>
+			<div class="rent-col rent-col-reg" data-toggle="modal" data-target="#ModalLong1">
+				<h2>Regular Space</h2>
+				<p>$105.00 per week</p>
+				<h4>Options</h4>
+				<p>1 month free with a 1 year lease</p>
+				<p>3 months free with a 2 year lease</p>
+				<p>Month to month</p>
+				<p>Week to week (must pay the week in advance)</p>
+			</div>
+			<div class="rent-col rent-col-lg" data-toggle="modal" data-target="#ModalLong2">
+				<h2>Large Space</h2>
+				<p>$115.00 per week</p>
+				<h4>Options</h4>
+				<p>1 month free with a 1 year lease</p>
+				<p>3 months free with a 2 year lease</p>
+				<p>Month to month</p>
+				<p>Week to week (must pay the week in advance)</p>
+			</div>
+		</div>
+	</div>
+</section>
 <section class="footer-section">
 	<div class="container footer-container">
 		<div class="row footer-row">
@@ -151,3 +177,91 @@
 
 
 </html>
+
+<!-- Modal -->
+<div class="modal fade" id="ModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Regular Space</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+				<div class="rent-slider rent-slider-reg">
+					<div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+					  <ol class="carousel-indicators">
+					    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+					    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+					    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+					  </ol>
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					      <img class="d-block w-100" src="images/banner.jpg" alt="First slide">
+					    </div>
+					    <div class="carousel-item">
+					      <img class="d-block w-100" src="images/banner.jpg" alt="Second slide">
+					    </div>
+					    <div class="carousel-item">
+					      <img class="d-block w-100" src="images/banner.jpg" alt="Third slide">
+					    </div>
+					  </div>
+					  <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+				</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="ModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Large Space</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+				<div class="rent-slider rent-slider-lg">
+					<div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100" src="images/banner.jpg" alt="First slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="images/banner.jpg" alt="Second slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="images/banner.jpg" alt="Third slide">
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+      </div>
+    </div>
+  </div>
+</div>
