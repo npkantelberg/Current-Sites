@@ -10,7 +10,7 @@
       <span class="contact menu-link">Contact</span>
     </li>
     <li class="menu-li">
-      <span class="rent menu-link">Rent Space</span>
+      <span class="rent menu-link">Chair Rental</span>
     </li>
   </ul>
 </div>
@@ -36,7 +36,7 @@
         <span class="contact">Contact</span>
       </div>
       <div class="circle-menu-item">
-        <span class="rent">Rent Space</span>
+        <span class="rent">Chair Rental</span>
       </div>
     </div>
   </div>

@@ -18,6 +18,12 @@
 p {
   margin-bottom: 0px !important; }
 
+.bold {
+  font-weight: bold; }
+
+.clickable {
+  cursor: pointer; }
+
 /* Banner Section */
 .header-section {
   box-shadow: 0px 3px 8px #000; }
@@ -81,7 +87,12 @@ p {
       position: relative;
       font-size: 18px; }
       .menu .menu-ul .menu-li span {
-        z-index: 3; }
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
     .menu .menu-ul .menu-li:before {
       content: '';
       position: absolute;
@@ -270,36 +281,46 @@ p {
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.3);
   color: #dbdbdb;
-  padding: 120px 0px; }
-  .about-section .about-row {
-    display: flex;
-    flex-wrap: wrap; }
-    .about-section .about-row .about-contact-col:last-of-type {
+  padding: 70px 0px; }
+  .about-section .about-container {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 50px 25px; }
+    .about-section .about-container .about-row {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start; }
-      .about-section .about-row .about-contact-col:last-of-type .hours-wrapper,
-      .about-section .about-row .about-contact-col:last-of-type .contact-wrapper {
-        flex: 0 0 205px;
-        width: 205px;
-        max-width: 250px; }
-      .about-section .about-row .about-contact-col:last-of-type .hours-wrapper .hours-item {
+      flex-wrap: wrap; }
+      .about-section .about-container .about-row .about-contact-col:last-of-type {
         display: flex;
-        justify-content: space-between; }
-    .about-section .about-row .about-content-col h3 {
-      border-bottom: solid 1px #dbdbdb;
-      min-width: 320px;
-      display: inline;
-      padding-bottom: 5px; }
-    .about-section .about-row .about-content-col p {
-      margin-top: 25px; }
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start; }
+        .about-section .about-container .about-row .about-contact-col:last-of-type .hours-wrapper,
+        .about-section .about-container .about-row .about-contact-col:last-of-type .contact-wrapper {
+          flex: 0 0 205px;
+          width: 205px;
+          max-width: 250px;
+          margin-bottom: 25px; }
+        .about-section .about-container .about-row .about-contact-col:last-of-type .hours-wrapper .hours-item {
+          display: flex;
+          justify-content: space-between; }
+      .about-section .about-container .about-row .about-content-col h3 {
+        border-bottom: solid 1px #dbdbdb;
+        min-width: 320px;
+        display: inline;
+        padding-bottom: 5px; }
+      .about-section .about-container .about-row .about-content-col p {
+        margin-top: 25px;
+        margin-bottom: 25px !important; }
   .about-section a {
     color: #dbdbdb; }
 
 @media (max-width: 767px) {
   .about-section {
     padding: 40px 0; } }
+@media (max-width: 575px) {
+  .about-section {
+    padding: 0px !important; }
+    .about-section .about-container {
+      background: rgba(0, 0, 0, 0.2) !important; } }
 /* Review section */
 .review-section {
   background: url("../images/reviews-background.jpg") no-repeat center center;

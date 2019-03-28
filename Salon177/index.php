@@ -17,9 +17,6 @@
 
 <title>Salon177 Kaukauna Wi</title>
 
-
-
-
 <body>
 <section class="header-section">
   <div class="banner-wrapper">
@@ -141,23 +138,25 @@
 	<div class="container rent-container">
 		<div class="row rent-row">
 			<h1>Rent your own private work station.</h1>
-			<div class="rent-col rent-col-reg" data-toggle="modal" data-target="#ModalLong1">
-				<h2>Regular Space</h2>
-				<p>$105.00 per week</p>
-				<h4>Options</h4>
-				<p>1 month free with a 1 year lease</p>
-				<p>3 months free with a 2 year lease</p>
-				<p>Month to month</p>
-				<p>Week to week (must pay the week in advance)</p>
+			<div class="rent-col rent-col-reg clickable" data-toggle="modal" data-target="#ModalLong1">
+				<h2>Regular Space.</h2>
+				<p>$105.00 per week.</p>
+				<h4>Options.</h4>
+				<p>1 month free with a 1 year lease.</p>
+				<p>3 months free with a 2 year lease.</p>
+				<p>Month to month.</p>
+				<p>Week to week (must pay the week in advance).</p>
+				<p class="bold">Click for images.</p>
 			</div>
-			<div class="rent-col rent-col-lg" data-toggle="modal" data-target="#ModalLong2">
-				<h2>Large Space</h2>
-				<p>$115.00 per week</p>
-				<h4>Options</h4>
-				<p>1 month free with a 1 year lease</p>
-				<p>3 months free with a 2 year lease</p>
-				<p>Month to month</p>
-				<p>Week to week (must pay the week in advance)</p>
+			<div class="rent-col rent-col-lg clickable" data-toggle="modal" data-target="#ModalLong2">
+				<h2>Large Space.</h2>
+				<p>$115.00 per week.</p>
+				<h4>Options.</h4>
+				<p>1 month free with a 1 year lease.</p>
+				<p>3 months free with a 2 year lease.</p>
+				<p>Month to month.</p>
+				<p>Week to week (must pay the week in advance).</p>
+				<p class="bold">Click for images.</p>
 			</div>
 		</div>
 	</div>

@@ -26,6 +26,12 @@ body{
 p{
   margin-bottom: 0px !important;
 }
+.bold{
+  font-weight: bold;
+}
+.clickable {
+  cursor: pointer;
+}
 
 /* Banner Section */
 .header-section{
@@ -95,6 +101,11 @@ p{
       font-size: 18px;
       span{
         z-index: 3;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
     .menu-li:before{
@@ -322,37 +333,43 @@ p{
   background-size: cover;
   background-color: rgba(0,0,0,0.3);
   color: $white;
-  padding: 120px 0px;
-  .about-row{
-    display: flex;
-    flex-wrap: wrap;
-    .about-contact-col:last-of-type{
+  padding: 70px 0px;
+  .about-container{
+    background: rgba(0,0,0,0.4);
+    padding: 50px 25px;
+    .about-row{
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
-      .hours-wrapper,
-      .contact-wrapper{
-        flex: 0 0 205px;
-        width: 205px;
-        max-width: 250px;
-      }
-      .hours-wrapper{
-        .hours-item{
-          display: flex;
-          justify-content: space-between;
+      .about-contact-col:last-of-type{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        .hours-wrapper,
+        .contact-wrapper{
+          flex: 0 0 205px;
+          width: 205px;
+          max-width: 250px;
+          margin-bottom: 25px;
+        }
+        .hours-wrapper{
+          .hours-item{
+            display: flex;
+            justify-content: space-between;
+          }
         }
       }
-    }
-    .about-content-col{
-      h3{
-        border-bottom: solid 1px $white;
-        min-width: 320px;
-        display: inline;
-        padding-bottom: 5px;
-      }
-      p{
-        margin-top: 25px;
+      .about-content-col{
+        h3{
+          border-bottom: solid 1px $white;
+          min-width: 320px;
+          display: inline;
+          padding-bottom: 5px;
+        }
+        p{
+          margin-top: 25px;
+          margin-bottom: 25px !important;
+        }
       }
     }
   }
@@ -363,6 +380,14 @@ p{
 @media(max-width: 767px){
   .about-section{
     padding: 40px 0;
+  }
+}
+@media(max-width: 575px){
+  .about-section{
+    padding: 0px !important;
+    .about-container{
+      background: rgba(0,0,0,0.2) !important;
+    }
   }
 }
 
