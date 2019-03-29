@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="scripts/scripts.js"></script>
@@ -15,7 +16,7 @@
 
 </head>
 
-<title>Salon177 Kaukauna Wi</title>
+<title>Salon177 LLC Kaukauna Wi</title>
 
 <body>
 <section class="header-section">
@@ -34,21 +35,26 @@
 <section class="about-section">
   <div class="container about-container">
     <div class="row about-row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 about-content-col">
-				<h3>About Sallon177</h3>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-content-col">
+				<h3>About Salon177 LLC</h3>
         <p>
-          Salon 177 llc has been a family owned business since 1970, formally known as Tony's Hair Design. Salon 177 llc is currently owned by  Frank Kantelberg, who took over the business in 1996, Frank is trained as a barber and has 32 years of salon experience. The Salon offers services in Cutting, Perms, Colors, Highlighting, Facial Waxing and nails. With all private booths you are guaranteed  privacy and great customer service. Salon 177 llc features Redken Haircolor and retail products, along with hard to find Roffler products. Salon 177 is dedicated to service and value. All of our licensed specialists sincerely enjoy what they do and it is reflective on the smiles and repeat business of our clients. We promise individual attention and great value for all of our customers.
+          Salon 177 LLC has been a family owned business since 1970, formally known as Tony's Hair Design. Salon 177 LLC is currently owned by  Frank Kantelberg, who took over the business in 1996, Frank is trained barber who started in his carrer 1980. The Salon offers services in Cutting, Perms, Colors, Highlighting, Facial Waxing and nails. With all private booths you are guaranteed  privacy and great customer service. Salon 177 LLC features Redken Haircolor and retail products, along with hard to find Roffler products. Salon 177 is dedicated to service and value. All of our licensed specialists sincerely enjoy what they do and it is reflective on the smiles and repeat business of our clients. We promise individual attention and great value for all of our customers. Please make appointments that fit best with your lifestyle.
         </p>
-				<h3>Appointments</h3>
+				<!-- <h3>Appointments</h3>
         <p>
           Please arrive 10 minutes prior to your appointment. We schedule appointments according to our specialists availability and speciality. If you are running late, please let us know and we will do our best to accommidate you. Arriving late will likely limit the time allocated for your service, it will lessen the effectivness and most importantly your pleasure and enjoyment. As a courtesy to all clients our treatments are completed as scheduled. Cancellations of all services require a 24 hour notice. Thank you for your consideration and understanding. Gratuities are not included in the price of services and are greatly appreciated. Suggestions are always welcome.
-        </p>
+        </p> -->
+				<!-- <h3>Appointments</h3>
+        <p>
+          Please make appointments that fit best with your lifestyle.
+        </p> -->
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 about-contact-col">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-contact-col">
 				<div class="contact-wrapper">
 					<h3>Contact</h3>
 					<div class="contact-content">
 						<div class="contact-item">
+
 							<a class="link" href="tel:9207662003">(920)766-2003</a>
 							<a href="mailto:salon177@att.net">Salon177@att.net</a>
 						</div>
@@ -63,7 +69,8 @@
           <div class="hours-content">
             <div class="hours-item">
               <span>Monday</span>
-              <span>8-5</span>
+              <span class="no-golf-season">8-5</span>
+							<span class="golf-season">Closed</span>
             </div>
             <div class="hours-item">
               <span>Tuesday</span>
@@ -139,24 +146,24 @@
 		<div class="row rent-row">
 			<h1>Rent your own private work station.</h1>
 			<div class="rent-col rent-col-reg clickable" data-toggle="modal" data-target="#ModalLong1">
-				<h2>Regular Space.</h2>
+				<h2>Regular Station.</h2>
 				<p>$105.00 per week.</p>
 				<h4>Options.</h4>
 				<p>1 month free with a 1 year lease.</p>
 				<p>3 months free with a 2 year lease.</p>
 				<p>Month to month.</p>
 				<p>Week to week (must pay the week in advance).</p>
-				<p class="bold">Click for images.</p>
+				<p class="bold"><i class="fas fa-images"></i>Click for images.</p>
 			</div>
 			<div class="rent-col rent-col-lg clickable" data-toggle="modal" data-target="#ModalLong2">
-				<h2>Large Space.</h2>
+				<h2>Large Station.</h2>
 				<p>$115.00 per week.</p>
 				<h4>Options.</h4>
 				<p>1 month free with a 1 year lease.</p>
 				<p>3 months free with a 2 year lease.</p>
 				<p>Month to month.</p>
 				<p>Week to week (must pay the week in advance).</p>
-				<p class="bold">Click for images.</p>
+				<p class="bold"><i class="fas fa-images"></i>Click for images.</p>
 			</div>
 		</div>
 	</div>
@@ -182,7 +189,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Regular Space</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Regular Station</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -226,7 +233,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Large Space</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Large Station</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

@@ -32,6 +32,13 @@ p{
 .clickable {
   cursor: pointer;
 }
+.hide{
+  display: none !important;
+}
+a:hover{
+  text-decoration: none !important;
+  color: #fff !important;
+}
 
 /* Banner Section */
 .header-section{
@@ -324,6 +331,13 @@ p{
   height: 400px;  /* The height is 400 pixels */
   width: 100%;  /* The width is the width of the web page */
   margin-top: 20px;
+  flex: 1 1 33%;
+  min-width: 410px;
+ }
+ @media(max-width: 991px){
+   #map{
+     min-width: 100%;
+   }
  }
 .about-section{
   background: url("../images/about-background.jpg")no-repeat center center;
@@ -347,9 +361,10 @@ p{
         align-items: flex-start;
         .hours-wrapper,
         .contact-wrapper{
-          flex: 0 0 205px;
+          flex: 0 0 33%;
           width: 205px;
           max-width: 250px;
+          min-width: 205px;
           margin-bottom: 25px;
         }
         .hours-wrapper{
@@ -375,6 +390,7 @@ p{
   }
   a{
     color: $white;
+    display: block;
   }
 }
 @media(max-width: 767px){
@@ -453,10 +469,25 @@ p{
       box-shadow: 3px 3px 8px #000;
       border-radius: 2px;
       flex: 1 1 45%;
+      transform: scale(1);
+      transition: .3s all;
+      z-index: 2;
       h2,h4,p{
         flex-basis: 100%;
         width: 100%;
       }
+      .bold{
+        font-size: 20px;
+        margin: 10px auto;
+        .fa-images{
+          padding-right: 10px;
+        }
+      }
+    }
+    .rent-col:hover{
+      transform: scale(1.1);
+      transition: .3s all;
+      z-index: 3;
     }
   }
   // .rent-slider-row{
