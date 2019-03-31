@@ -235,7 +235,7 @@ a:hover{
     width: 50vw;
     height: 100%;
     position: absolute;
-    background: url('../images/banner-left.jpg')no-repeat left center;
+    background: url('../images/banner-left.jpg')no-repeat right center;
     background-size: cover;
     top: 0;
     left: -50vw;
@@ -246,7 +246,7 @@ a:hover{
     width: 50vw;
     height: 100%;
     position: absolute;
-    background: url('../images/banner-right.jpg')no-repeat right center;
+    background: url('../images/banner-right.jpg')no-repeat left center;
     background-size: cover;
     top: 0;
     right: -50vw;
