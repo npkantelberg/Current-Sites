@@ -47,44 +47,44 @@ a:hover{
 // Pages
 @-webkit-keyframes neon1 {
   0%{
-    text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px $neon-red, 0 0 0px $neon-red, 0 0 0px $neon-red, 0 0 0px $neon-red, 0 0 0px $neon-red;
+    text-shadow: 0 0 0px rgba(255,255,255,0.5), 0 0 0px rgba(255,255,255,0.5), 0 0 0px $neon-red, 0 0 0px $neon-red, 0 0 0px $neon-red, 0 0 0px $neon-red;
   }
   22%{
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $neon-red, 0 0 35px $neon-red, 0 0 40px $neon-red, 0 0 50px $neon-red, 0 0 75px $neon-red;
+    text-shadow: 0 0 6px rgba(255,255,255,0.5), 0 0 7px rgba(255,255,255,0.5), 0 0 6px $neon-red, 0 0 12px $neon-red, 0 0 13px $neon-red, 0 0 12px $neon-red;
   }
   66% {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $neon-red, 0 0 70px $neon-red, 0 0 80px $neon-red, 0 0 100px $neon-red, 0 0 150px $neon-red;
+    text-shadow: 0 0 8px rgba(255,255,255,0.5), 0 0 8px rgba(255,255,255,0.5), 0 0 8px $neon-red, 0 0 15px $neon-red, 0 0 17px $neon-red, 0 0 17px $neon-red;
   }
   100% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $neon-red, 0 0 35px $neon-red, 0 0 40px $neon-red, 0 0 50px $neon-red, 0 0 75px $neon-red;
+    text-shadow: 0 0 5px rgba(255,255,255,0.5), 0 0 5px rgba(255,255,255,0.5), 0 0 25px #fd413c, 0 0 5px #fd413c, 0 0 8px #fd413c, 0 0 10px #fd413c, 0 0 10px #fd413c;
   }
 }
 @-moz-keyframes neon1 {
   0%{
-    text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px $neon-red, 0 0 0px $neon-red, 0 0 0px $neon-red, 0 0 0px $neon-red, 0 0 0px $neon-red;
+    text-shadow: 0 0 0px rgba(255,255,255,0.5), 0 0 0px rgba(255,255,255,0.5), 0 0 0px $neon-red, 0 0 0px $neon-red, 0 0 0px $neon-red, 0 0 0px $neon-red;
   }
   22%{
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $neon-red, 0 0 35px $neon-red, 0 0 40px $neon-red, 0 0 50px $neon-red, 0 0 75px $neon-red;
+    text-shadow: 0 0 6px rgba(255,255,255,0.5), 0 0 7px rgba(255,255,255,0.5), 0 0 6px $neon-red, 0 0 12px $neon-red, 0 0 13px $neon-red, 0 0 12px $neon-red;
   }
   66% {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $neon-red, 0 0 70px $neon-red, 0 0 80px $neon-red, 0 0 100px $neon-red, 0 0 150px $neon-red;
+    text-shadow: 0 0 8px rgba(255,255,255,0.5), 0 0 8px rgba(255,255,255,0.5), 0 0 8px $neon-red, 0 0 15px $neon-red, 0 0 17px $neon-red, 0 0 17px $neon-red;
   }
   100% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $neon-red, 0 0 35px $neon-red, 0 0 40px $neon-red, 0 0 50px $neon-red, 0 0 75px $neon-red;
+    text-shadow: 0 0 5px rgba(255,255,255,0.5), 0 0 5px rgba(255,255,255,0.5), 0 0 25px #fd413c, 0 0 5px #fd413c, 0 0 8px #fd413c, 0 0 10px #fd413c, 0 0 10px #fd413c;
   }
 }
 @keyframes neon1 {
   0%{
-    text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px $neon-red, 0 0 0px $neon-red, 0 0 0px $neon-red, 0 0 0px $neon-red, 0 0 0px $neon-red;
+    text-shadow: 0 0 0px rgba(255,255,255,0.5), 0 0 0px rgba(255,255,255,0.5), 0 0 0px $neon-red, 0 0 0px $neon-red, 0 0 0px $neon-red, 0 0 0px $neon-red;
   }
   22%{
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $neon-red, 0 0 35px $neon-red, 0 0 40px $neon-red, 0 0 50px $neon-red, 0 0 75px $neon-red;
+    text-shadow: 0 0 6px rgba(255,255,255,0.5), 0 0 7px rgba(255,255,255,0.5), 0 0 6px $neon-red, 0 0 12px $neon-red, 0 0 13px $neon-red, 0 0 12px $neon-red;
   }
   66% {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $neon-red, 0 0 70px $neon-red, 0 0 80px $neon-red, 0 0 100px $neon-red, 0 0 150px $neon-red;
+    text-shadow: 0 0 8px rgba(255,255,255,0.5), 0 0 8px rgba(255,255,255,0.5), 0 0 8px $neon-red, 0 0 15px $neon-red, 0 0 17px $neon-red, 0 0 17px $neon-red;
   }
   100% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $neon-red, 0 0 35px $neon-red, 0 0 40px $neon-red, 0 0 50px $neon-red, 0 0 75px $neon-red;
+    text-shadow: 0 0 5px rgba(255,255,255,0.5), 0 0 5px rgba(255,255,255,0.5), 0 0 25px #fd413c, 0 0 5px #fd413c, 0 0 8px #fd413c, 0 0 10px #fd413c, 0 0 10px #fd413c;
   }
 }
 
@@ -171,9 +171,9 @@ a:hover{
       .menu-li:active,
       .menu-li:hover{
         transition: .3s all;
-        -webkit-animation: neon1 1.5s ease-in-out forwards alternate;
-        -moz-animation: neon1 1.5s ease-in-out forwards alternate;
-        animation: neon1 1.5s ease-in-out forwards alternate;
+        -webkit-animation: neon1 .75s ease-in-out forwards alternate;
+        -moz-animation: neon1 .75s ease-in-out forwards alternate;
+        animation: neon1 .75s ease-in-out forwards alternate;
       }
     }
   }
@@ -201,7 +201,7 @@ a:hover{
   }
   .page.active-page{
     display: block;
-    overflow: hidden;
+    overflow: scroll;
   }
   .menu-page{
     z-index: 999;
@@ -216,13 +216,7 @@ a:hover{
     transition-delay: 0s;
   }
   .menu-page.menu-hide{
-    // animation-name: menu-display;
-    // animation-duration: 0s;
-    // animation-delay: .6s;
-    // animation-fill-mode: forwards;
     display: none !important;
-    // transition: .1s display;
-    // transition-delay: .3s;
   }
   .menu-page.active-page-animate{
 
@@ -290,13 +284,99 @@ a:hover{
   }
   .about-page{
     z-index: 998;
-    background: #003377;
+    background: #222;
+    .about-page-inner{
+      .body-wrapper{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        z-index: 10;
+        .about-content{
+          max-width: 55%;
+          margin-top: 5%;
+          padding: 0 15px;
+          color: $white;
+        }
+      }
+      .about-page-header{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        overflow: hidden;
+        max-width: 100vw;
+        max-height: 100vh;
+        z-index: 9;
+        .about-page-hero{
+          position: absolute;
+          top: 0;
+          right: -45vw;
+          transform: rotate(45deg);
+          min-height: 70vh;
+          width: 100%;
+          overflow: hidden;
+        }
+        .about-page-hero:after{
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%;
+          min-height: 100vh;
+          background: url('../images/dicks-at-night.jpg')no-repeat center center;
+          background-size: cover;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+    @media(max-width: 1409px) and (min-width: 1024px){
+      .about-page-inner{
+        .about-page-header{
+          .about-page-hero{
+            min-height: 50vh;
+            &:after{
+              min-height: 70vh;
+            }
+          }
+        }
+      }
+    }
+    @media(max-width: 1023px) and (min-width: 768px){
+      .about-page-inner{
+        .about-page-header{
+          .about-page-hero{
+            min-height: 30vh;
+            &:after{
+              min-height: 45vh;
+            }
+          }
+        }
+      }
+    }
+    @media(max-width: 767px){
+      .about-page-inner{
+        .about-page-header{
+          .about-page-hero{
+            min-height: 30vh;
+            top: -65px;
+            right: -40vw;
+            &:after{
+              min-height: 55vh;
+            }
+          }
+        }
+      }
+    }
   }
   .apply-page{
     z-index: 997;
-    background: #773300;
+    background: #222;
+    padding-top: 20px;
   }
   .actual-menu-page{
+    background: #222;
     .menu-box{
       width: 100%;
       text-align: center;
