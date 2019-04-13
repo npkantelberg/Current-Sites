@@ -113,7 +113,8 @@ a:hover {
     .menu .menu-ul .menu-li:hover {
       background: transparent;
       transition: .3s all;
-      color: #dbdbdb; }
+      color: #dbdbdb;
+      cursor: pointer; }
     .menu .menu-ul .menu-li:hover:before {
       right: 0;
       transition: .3s all;
@@ -403,15 +404,22 @@ a:hover {
       transition: .3s all;
       z-index: 3; }
 
+.modal-open .modal {
+  background: rgba(0, 0, 0, 0.5); }
+
 .modal-dialog {
   max-width: 90% !important;
   min-width: 310px; }
   .modal-dialog .modal-content {
     background-color: #222;
-    color: #dbdbdb; }
+    color: #dbdbdb;
+    margin: 0 auto;
+    max-width: 768px; }
     .modal-dialog .modal-content .close {
       color: #dbdbdb;
       text-shadow: 0 1px 0 #000; }
+    .modal-dialog .modal-content .modal-body .carousel-item img {
+      height: 100%; }
 
 /* Footer Section */
 .footer-section {

@@ -25,10 +25,10 @@
       <div class="banner-cover">
 
       </div>
-      <img src="images/banner.jpg" alt="">
+      <img src="images/shop.jpg" alt="">
     </div>
     <div class="logo">
-      <img src="images/logo.png" alt="">
+      <img src="images/logo.jpg" alt="">
     </div>
   </div>
 </section>
@@ -204,13 +204,13 @@
 					  </ol>
 					  <div class="carousel-inner">
 					    <div class="carousel-item active">
-					      <img class="d-block w-100" src="images/banner.jpg" alt="First slide">
+					      <img class="d-block w-100" src="images/booths/small1.jpg" alt="First slide">
 					    </div>
 					    <div class="carousel-item">
-					      <img class="d-block w-100" src="images/banner.jpg" alt="Second slide">
+					      <img class="d-block w-100" src="images/booths/small2.jpg" alt="Second slide">
 					    </div>
 					    <div class="carousel-item">
-					      <img class="d-block w-100" src="images/banner.jpg" alt="Third slide">
+					      <img class="d-block w-100" src="images/booths/small3.jpg" alt="Third slide">
 					    </div>
 					  </div>
 					  <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
@@ -248,13 +248,13 @@
 						</ol>
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<img class="d-block w-100" src="images/banner.jpg" alt="First slide">
+								<img class="d-block w-100" src="images/booths/large1.jpg" alt="First slide">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="images/banner.jpg" alt="Second slide">
+								<img class="d-block w-100" src="images/booths/large2.jpg" alt="Second slide">
 							</div>
 							<div class="carousel-item">
-								<img class="d-block w-100" src="images/banner.jpg" alt="Third slide">
+								<img class="d-block w-100" src="images/booths/large3.jpg" alt="Third slide">
 							</div>
 						</div>
 						<a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">

@@ -131,6 +131,7 @@ a:hover{
       background: transparent;
       transition: .3s all;
       color: $white;
+      cursor: pointer;
     }
     .menu-li:hover:before{
       // border-bottom: solid 1px $white;
@@ -517,15 +518,29 @@ a:hover{
   //   }
   // }
 }
+.modal-open{
+  .modal{
+    background: rgba(0,0,0,0.5)
+  }
+}
 .modal-dialog{
   max-width: 90% !important;
   min-width: 310px;
   .modal-content{
     background-color: #222;
     color: $white;
+    margin: 0 auto;
+    max-width: 768px;
     .close{
       color: $white;
       text-shadow: 0 1px 0 #000;
+    }
+    .modal-body{
+      .carousel-item{
+        img{
+          height: 100%;
+        }
+      }
     }
   }
 }
