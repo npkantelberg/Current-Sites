@@ -16,7 +16,7 @@
   margin: 0; }
 
 p {
-  margin-bottom: 0px !important; }
+  margin-bottom: 0px; }
 
 .bold {
   font-weight: bold; }
@@ -30,6 +30,9 @@ p {
 a:hover {
   text-decoration: none !important;
   color: #fff !important; }
+
+.row .row {
+  margin: 0; }
 
 @-webkit-keyframes neon1 {
   0% {
@@ -207,69 +210,86 @@ a:hover {
     animation: neon-toggle1 1.5s ease-in-out forwards alternate; }
   .page-box-col .about-page {
     z-index: 998;
-    background: #222; }
-    .page-box-col .about-page .about-page-inner .body-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      overflow: hidden;
-      z-index: 10; }
-      .page-box-col .about-page .about-page-inner .body-wrapper .about-content {
-        max-width: 55%;
-        margin-top: 5%;
-        padding: 0 15px;
-        color: #dbdbdb; }
-    .page-box-col .about-page .about-page-inner .about-page-header {
-      width: 100vw;
-      height: 100vh;
-      position: absolute;
-      overflow: hidden;
-      max-width: 100vw;
-      max-height: 100vh;
-      z-index: 9; }
-      .page-box-col .about-page .about-page-inner .about-page-header .about-page-hero {
-        position: absolute;
-        top: 0;
-        right: -45vw;
-        transform: rotate(45deg);
-        min-height: 70vh;
-        width: 100%;
-        overflow: hidden; }
-      .page-box-col .about-page .about-page-inner .about-page-header .about-page-hero:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        min-height: 100vh;
-        background: url("../images/dicks-at-night.jpg") no-repeat center center;
+    background: #e3dfdb; }
+    .page-box-col .about-page h2 {
+      text-decoration: underline; }
+    .page-box-col .about-page img {
+      width: 100%; }
+    .page-box-col .about-page .about-page-inner .about-page-row {
+      justify-content: center; }
+      .page-box-col .about-page .about-page-inner .about-page-row .about-page-header {
+        margin: 100px auto 50px auto;
+        text-align: center; }
+      .page-box-col .about-page .about-page-inner .about-page-row .about-page-banner-box {
+        background: url("../images/about-header.jpg") no-repeat center center;
         background-size: cover;
-        transform: rotate(-45deg); }
-    @media (max-width: 1409px) and (min-width: 1024px) {
-      .page-box-col .about-page .about-page-inner .about-page-header .about-page-hero {
-        min-height: 50vh; }
-        .page-box-col .about-page .about-page-inner .about-page-header .about-page-hero:after {
-          min-height: 70vh; } }
-    @media (max-width: 1023px) and (min-width: 768px) {
-      .page-box-col .about-page .about-page-inner .about-page-header .about-page-hero {
-        min-height: 30vh; }
-        .page-box-col .about-page .about-page-inner .about-page-header .about-page-hero:after {
-          min-height: 45vh; } }
-    @media (max-width: 767px) {
-      .page-box-col .about-page .about-page-inner .about-page-header .about-page-hero {
-        min-height: 30vh;
-        top: -65px;
-        right: -40vw; }
-        .page-box-col .about-page .about-page-inner .about-page-header .about-page-hero:after {
-          min-height: 55vh; } }
+        height: 100%;
+        min-height: 312px;
+        border-radius: 4px;
+        overflow: hidden; }
+      .page-box-col .about-page .about-page-inner .about-page-row .contact-inner-row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        width: 100%; }
+        .page-box-col .about-page .about-page-inner .about-page-row .contact-inner-row .contact-col {
+          background: #C9C5C1;
+          border-radius: 4px;
+          padding: 10px;
+          color: #222; }
+          .page-box-col .about-page .about-page-inner .about-page-row .contact-inner-row .contact-col a {
+            color: #222; }
+          .page-box-col .about-page .about-page-inner .about-page-row .contact-inner-row .contact-col p {
+            margin-bottom: 0px; }
+          .page-box-col .about-page .about-page-inner .about-page-row .contact-inner-row .contact-col ul {
+            margin-top: 10px;
+            text-decoration: none;
+            list-style-type: none; }
+            .page-box-col .about-page .about-page-inner .about-page-row .contact-inner-row .contact-col ul li {
+              display: flex;
+              justify-content: space-between; }
+      .page-box-col .about-page .about-page-inner .about-page-row .about-content {
+        text-align: center;
+        margin-bottom: 50px; }
+        .page-box-col .about-page .about-page-inner .about-page-row .about-content p {
+          margin-bottom: 10px; }
+      .page-box-col .about-page .about-page-inner .about-page-row .about-community {
+        margin-bottom: 50px;
+        text-align: center; }
+        .page-box-col .about-page .about-page-inner .about-page-row .about-community .et-wrapper {
+          margin-top: 25px; }
+          .page-box-col .about-page .about-page-inner .about-page-row .about-community .et-wrapper img {
+            width: 100%; }
+        .page-box-col .about-page .about-page-inner .about-page-row .about-community .trees-wrapper {
+          margin-top: 50px; }
+          .page-box-col .about-page .about-page-inner .about-page-row .about-community .trees-wrapper .col-xs-12 {
+            padding: 0 15px; }
+          .page-box-col .about-page .about-page-inner .about-page-row .about-community .trees-wrapper .image-col {
+            margin-top: 15px; }
+            .page-box-col .about-page .about-page-inner .about-page-row .about-community .trees-wrapper .image-col img {
+              width: 100%; }
+        .page-box-col .about-page .about-page-inner .about-page-row .about-community .family-wrapper {
+          margin-bottom: 25px; }
+          .page-box-col .about-page .about-page-inner .about-page-row .about-community .family-wrapper .col-xs-12 {
+            padding: 0 15px; }
+      @media (max-width: 767px) {
+        .page-box-col .about-page .about-page-inner .about-page-row .about-page-banner {
+          flex-basis: 100%;
+          width: 100%;
+          max-width: 100%;
+          padding: 0px;
+          margin-bottom: 15px; }
+        .page-box-col .about-page .about-page-inner .about-page-row .contact-col {
+          flex-basis: 100%;
+          width: 100%;
+          max-width: 100%; } }
   .page-box-col .apply-page {
     z-index: 997;
-    background: #222;
+    background: #e3dfdb;
     padding-top: 20px; }
   .page-box-col .actual-menu-page {
-    background: #222; }
+    background: #e3dfdb; }
     .page-box-col .actual-menu-page .menu-box {
       width: 100%;
       text-align: center;
@@ -282,5 +302,19 @@ a:hover {
         max-width: 100vw;
         height: auto;
         max-height: 90vh; }
+
+.footer-section {
+  background: #C9C5C1; }
+  .footer-section .footer-row {
+    flex-wrap: nowrap; }
+    .footer-section .footer-row .footer-col {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .footer-section .footer-row .footer-col span {
+        padding: 15px 0px;
+        color: #222; }
+    .footer-section .footer-row .footer-col:last-of-type {
+      justify-content: flex-end; }
 
 /*# sourceMappingURL=style.css.map */

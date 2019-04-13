@@ -5,6 +5,7 @@ $neon-red: #5b2121;
 $white: #dbdbdb;
 $primary-font: #fff;
 $neon-red: #fd413c;
+$smooth: #e3dfdb;
 
 
 /* General */
@@ -27,7 +28,7 @@ body{
   $font-color: $primary-font;
 }
 p{
-  margin-bottom: 0px !important;
+  margin-bottom: 0px;
 }
 .bold{
   font-weight: bold;
@@ -41,6 +42,11 @@ p{
 a:hover{
   text-decoration: none !important;
   color: $primary-font !important;
+}
+.row{
+  .row{
+    margin: 0;
+  }
 }
 
 
@@ -284,99 +290,201 @@ a:hover{
   }
   .about-page{
     z-index: 998;
-    background: #222;
+    background: $smooth;
+    h2{
+      text-decoration: underline;
+    }
+    img{
+      width: 100%;
+    }
     .about-page-inner{
-      .body-wrapper{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        overflow: hidden;
-        z-index: 10;
-        .about-content{
-          max-width: 55%;
-          margin-top: 5%;
-          padding: 0 15px;
-          color: $white;
+      .about-page-row{
+        justify-content: center;
+        .about-page-header{
+          margin: 100px auto 50px auto;
+          text-align: center;
         }
-      }
-      .about-page-header{
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        overflow: hidden;
-        max-width: 100vw;
-        max-height: 100vh;
-        z-index: 9;
-        .about-page-hero{
-          position: absolute;
-          top: 0;
-          right: -45vw;
-          transform: rotate(45deg);
-          min-height: 70vh;
-          width: 100%;
+        .about-page-banner-box{
+          background: url('../images/about-header.jpg')no-repeat center center;
+          background-size: cover;
+          height: 100%;
+          min-height: 312px;
+          border-radius: 4px;
           overflow: hidden;
         }
-        .about-page-hero:after{
-          content: '';
-          position: absolute;
-          top: 0;
-          right: 0;
+        .contact-inner-row{
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          margin-bottom: 50px;
           width: 100%;
-          min-height: 100vh;
-          background: url('../images/dicks-at-night.jpg')no-repeat center center;
-          background-size: cover;
-          transform: rotate(-45deg);
-        }
-      }
-    }
-    @media(max-width: 1409px) and (min-width: 1024px){
-      .about-page-inner{
-        .about-page-header{
-          .about-page-hero{
-            min-height: 50vh;
-            &:after{
-              min-height: 70vh;
+          .contact-col{
+            background: #C9C5C1;
+            border-radius: 4px;
+            padding: 10px;
+            color: #222;
+            a{
+              color: #222;
             }
+            p{
+              margin-bottom: 0px;
+            }
+            ul{
+              margin-top: 10px;
+              text-decoration: none;
+              list-style-type: none;
+              li{
+                display: flex;
+                justify-content: space-between;
+              }
+            }
+          }
+        }
+        .about-content{
+          text-align: center;
+          margin-bottom: 50px;
+          p{
+            margin-bottom: 10px;
+          }
+        }
+        .about-community{
+          margin-bottom: 50px;
+          text-align: center;
+          .et-wrapper{
+            margin-top: 25px;
+            img{
+              width: 100%;
+            }
+          }
+          .trees-wrapper{
+            margin-top: 50px;
+            .col-xs-12{
+              padding: 0 15px;
+            }
+            .image-col{
+              margin-top: 15px;
+              img{
+                width: 100%;
+              }
+            }
+          }
+          .family-wrapper{
+            .col-xs-12{
+              padding: 0 15px;
+            }
+            margin-bottom: 25px;
+          }
+        }
+        @media(max-width: 767px){
+          .about-page-banner{
+            flex-basis: 100%;
+            width: 100%;
+            max-width: 100%;
+            padding: 0px;
+            margin-bottom: 15px;
+          }
+          .contact-col{
+            flex-basis: 100%;
+            width: 100%;
+            max-width: 100%;
           }
         }
       }
     }
-    @media(max-width: 1023px) and (min-width: 768px){
-      .about-page-inner{
-        .about-page-header{
-          .about-page-hero{
-            min-height: 30vh;
-            &:after{
-              min-height: 45vh;
-            }
-          }
-        }
-      }
-    }
-    @media(max-width: 767px){
-      .about-page-inner{
-        .about-page-header{
-          .about-page-hero{
-            min-height: 30vh;
-            top: -65px;
-            right: -40vw;
-            &:after{
-              min-height: 55vh;
-            }
-          }
-        }
-      }
-    }
+
+
+    // .about-page-inner{
+    //   .body-wrapper{
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     overflow: hidden;
+    //     z-index: 10;
+    //     .about-content{
+    //       max-width: 55%;
+    //       margin-top: 5%;
+    //       padding: 0 15px;
+    //       color: $white;
+    //     }
+    //   }
+    //   .about-page-header{
+    //     width: 100vw;
+    //     height: 100vh;
+    //     position: absolute;
+    //     overflow: hidden;
+    //     max-width: 100vw;
+    //     max-height: 100vh;
+    //     z-index: 9;
+    //     .about-page-hero{
+    //       position: absolute;
+    //       top: 0;
+    //       right: -45vw;
+    //       transform: rotate(45deg);
+    //       min-height: 70vh;
+    //       width: 100%;
+    //       overflow: hidden;
+    //     }
+    //     .about-page-hero:after{
+    //       content: '';
+    //       position: absolute;
+    //       top: 0;
+    //       right: 0;
+    //       width: 100%;
+    //       min-height: 100vh;
+    //       background: url('../images/dicks-at-night.jpg')no-repeat center center;
+    //       background-size: cover;
+    //       transform: rotate(-45deg);
+    //     }
+    //   }
+    // }
+    // @media(max-width: 1409px) and (min-width: 1024px){
+    //   .about-page-inner{
+    //     .about-page-header{
+    //       .about-page-hero{
+    //         min-height: 50vh;
+    //         &:after{
+    //           min-height: 70vh;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+    // @media(max-width: 1023px) and (min-width: 768px){
+    //   .about-page-inner{
+    //     .about-page-header{
+    //       .about-page-hero{
+    //         min-height: 30vh;
+    //         &:after{
+    //           min-height: 45vh;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+    // @media(max-width: 767px){
+    //   .about-page-inner{
+    //     .about-page-header{
+    //       .about-page-hero{
+    //         min-height: 30vh;
+    //         top: -65px;
+    //         right: -40vw;
+    //         &:after{
+    //           min-height: 55vh;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
   }
   .apply-page{
     z-index: 997;
-    background: #222;
+    background: $smooth;
     padding-top: 20px;
   }
   .actual-menu-page{
-    background: #222;
+    background: $smooth;
     .menu-box{
       width: 100%;
       text-align: center;
@@ -390,6 +498,24 @@ a:hover{
         height: auto;
         max-height: 90vh;
       }
+    }
+  }
+}
+.footer-section{
+  background: #C9C5C1;
+  .footer-row{
+    flex-wrap: nowrap;
+    .footer-col{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      span{
+        padding: 15px 0px;
+        color: #222;
+      }
+    }
+    .footer-col:last-of-type{
+      justify-content: flex-end;
     }
   }
 }
