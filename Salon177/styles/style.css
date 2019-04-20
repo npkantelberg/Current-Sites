@@ -53,25 +53,59 @@ a:hover {
 
 .logo {
   position: absolute;
-  top: 5%;
-  left: 5%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 1;
-  max-width: 250px;
-  width: 25%; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .logo img {
-    width: 100%; }
+    width: 100%;
+    max-width: 408px; }
 
+@media (max-width: 1024px) {
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px; }
+    .logo img {
+      width: 100%;
+      max-width: 308px; } }
 @media (max-width: 767px) {
   .logo {
-    top: 5px; } }
+    margin-bottom: 340px; } }
+@media (max-width: 500px) {
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 520px; }
+    .logo img {
+      width: 100%;
+      max-width: 178px; } }
 /* Menu */
 .menu {
   position: absolute;
   top: 50px;
-  right: 50px;
+  right: 0;
+  left: 0;
   z-index: 1000;
-  width: 100%;
-  max-width: 500px; }
+  width: 100%; }
   .menu .menu-ul {
     display: flex;
     list-style: none;
@@ -79,7 +113,9 @@ a:hover {
     width: 100%;
     margin-bottom: 0px;
     height: 50px;
-    align-items: center; }
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto; }
     .menu .menu-ul .menu-li {
       flex: 1 1 25%;
       text-align: center;
@@ -92,7 +128,9 @@ a:hover {
       transition: .15s all;
       overflow: hidden;
       position: relative;
-      font-size: 18px; }
+      font-size: 18px;
+      border-top: solid 1px #fff;
+      border-bottom: solid 1px #fff; }
       .menu .menu-ul .menu-li span {
         z-index: 3;
         width: 100%;
