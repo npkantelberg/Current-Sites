@@ -53,6 +53,9 @@ a:hover{
   background: rgba(0,0,0,0.3);
   z-index: 1;
 }
+.banner-wrapper{
+  position: relative;
+}
 .banner-box{
   overflow: hidden;
   max-height: 100vh;
@@ -87,7 +90,7 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 200px;
+    // margin-bottom: 200px;
     img{
       width: 100%;
       max-width: 308px;
@@ -96,7 +99,7 @@ a:hover{
 }
 @media(max-width: 767px){
   .logo{
-    margin-bottom: 340px;
+    // margin-bottom: 340px;
   }
 }
 @media(max-width: 500px){
@@ -110,7 +113,7 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 520px;
+    // margin-bottom: 520px;
     img{
       width: 100%;
       max-width: 178px;
@@ -140,7 +143,7 @@ a:hover{
       text-align: center;
       height: 100%;
       background: transparent;
-      color: $white;
+      color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -566,12 +569,14 @@ a:hover{
 }
 .modal-open{
   .modal{
-    background: rgba(0,0,0,0.5)
+    background: rgba(0,0,0,0.5);
   }
 }
 .modal-dialog{
   max-width: 90% !important;
   min-width: 310px;
+  margin: 0 auto !important;
+  top: 5%;
   .modal-content{
     background-color: #222;
     color: $white;
@@ -584,7 +589,7 @@ a:hover{
     .modal-body{
       .carousel-item{
         img{
-          height: 100%;
+          // height: 100%;
         }
       }
     }
